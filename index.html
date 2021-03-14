@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+    
+    <script src="http://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="script.js" defer></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+    
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>Herramientas PDT</title>
+</head>
+<body>
+<!--Header con shrink nav sencillo-->    
+    <header class="block" id="header">
+        <nav class="navbar shadow" id="navbar">
+            <div class="container-fluid" id="navbar-right">
+            <a class="navbar-brand" id="logo" href="index.html">HERRAMIENTAS PDT</a>
+            </div>
+        </nav>
+    </header>
+
+<!--Article con dos section-->  
+    <article class="container-fluid">
+
+        <section class="row"> 
+            <div class="col-2"></div>
+            <div class="col-1 texto-vertical">
+                COMPARADOR
+            </div>
+            <div class="col-7 shadow bg-white container-tablas">
+                <form onchange="">
+                    <table class="table table-responsive tabla-puntaje">
+                        <thead class="thead-backg">
+                            <tr>
+                                <th scope="col" class="col-3 text-center">
+                                    SELECCIONA INSTITUCIÓN
+                                </th>
+                                <th scope="col" class="col-3">
+                                    <div class="">
+                                        <select class="form-select" id="seleccionaUnaInstitucion"> 
+                                            <option selected value="nada" disabled>Elige una institución</option>
+                                            <option value="1">Pontificia Universidad Católica de Chile</option>
+                                            <option value="2">Pontificia Universidad Católica de Valparaíso</option>
+                                            <option value="3">Universidad Academia de Humanismo Cristiano</option>
+                                            <option value="4">Universidad Adolfo Ibáñez</option>
+                                            <option value="5">Universidad Alberto Hurtado</option>
+                                            <option disabled value="6">Universidad Andrés Bello</option>
+                                            <option value="7">Universidad Arturo Prat</option>
+                                            <option value="8">Universidad Austral de Chile</option>
+                                            <option value="9">Universidad Autónoma de Chile</option>
+                                            <option value="10">Universidad Bernardo O'Higgins</option>
+                                            <option disabled value="11">Universidad Católica Raúl Silva Henríquez</option>
+                                            <option disabled value="12">Universidad Católica de la Santísima Concepción</option>
+                                            <option disabled value="13">Universidad Católica de Temuco</option>
+                                            <option disabled value="14">Universidad Católica del Maule</option>
+                                            <option disabled value="15">Universidad Católica del Norte</option>
+                                            <option disabled value="16">Universidad Central de Chile</option>
+                                            <option disabled value="17">Universidad de Antofagasta</option>
+                                            <option disabled value="18">Universidad de Atacama</option>
+                                            <option disabled value="19">Universidad de Aysén</option>
+                                            <option disabled value="20">Universidad de Chile</option>
+                                            <option disabled value="21">Universidad de Concepción</option>
+                                            <option disabled value="22">Universidad de La Frontera</option>
+                                            <option disabled value="23">Universidad de La Serena</option>
+                                            <option disabled value="24">Universidad de Los Andes</option>
+                                            <option disabled value="25">Universidad de Los Lagos</option>
+                                            <option disabled value="26">Universidad de Magallanes</option>
+                                            <option disabled value="27">Universidad de O'Higgins</option>
+                                            <option disabled value="28">Universidad de Playa Ancha</option>
+                                            <option disabled value="29">Universidad de Santiago de Chile</option>
+                                            <option disabled value="30">Universidad de Talca</option>
+                                            <option disabled value="31">Universidad de Tarapacá</option>
+                                            <option disabled value="32">Universidad de Valparaíso</option>
+                                            <option disabled value="33">Universidad del Bío-Bío</option>
+                                            <option disabled value="34">Universidad del Desarrollo</option>
+                                            <option disabled value="35">Universidad Diego Portales</option>
+                                            <option disabled value="36">Universidad Finis Terrae</option>
+                                            <option disabled value="37">Universidad Gabriela Mistral</option>
+                                            <option disabled value="38">Universidad Mayor</option>
+                                            <option disabled value="39">Universidad Metropolitana de Ciencias de la Educación</option>
+                                            <option disabled value="40">Universidad San Sebastián</option>
+                                            <option disabled value="41">Universidad Santo Tomás</option>
+                                            <option disabled value="42">Universidad Técnica Federico Santa María</option>
+                                            <option disabled value="43">Universidad Tecnológica Metropolitana</option>
+                                        </select>
+                                    </div>
+                                </th>
+                                <th scope="col" class="col-3">
+                                    <select class="form-select" id="seleccionaOtraInstitucion"> 
+                                        <option selected value="nada" disabled>Elige otra institución</option>
+                                        <option value="1">Pontificia Universidad Católica de Chile</option>
+                                        <option value="2">Pontificia Universidad Católica de Valparaíso</option>
+                                        <option value="3">Universidad Academia de Humanismo Cristiano</option>
+                                        <option value="4">Universidad Adolfo Ibáñez</option>
+                                        <option value="5">Universidad Alberto Hurtado</option>
+                                        <option disabled value="6">Universidad Andrés Bello</option>
+                                        <option value="7">Universidad Arturo Prat</option>
+                                        <option value="8">Universidad Austral de Chile</option>
+                                        <option value="9">Universidad Autónoma de Chile</option>
+                                        <option value="10">Universidad Bernardo O'Higgins</option>
+                                        <option disabled value="11">Universidad Católica Raúl Silva Henríquez</option>
+                                        <option disabled value="12">Universidad Católica de la Santísima Concepción</option>
+                                        <option disabled value="13">Universidad Católica de Temuco</option>
+                                        <option disabled value="14">Universidad Católica del Maule</option>
+                                        <option disabled value="15">Universidad Católica del Norte</option>
+                                        <option disabled value="16">Universidad Central de Chile</option>
+                                        <option disabled value="17">Universidad de Antofagasta</option>
+                                        <option disabled value="18">Universidad de Atacama</option>
+                                        <option disabled value="19">Universidad de Aysén</option>
+                                        <option disabled value="20">Universidad de Chile</option>
+                                        <option disabled value="21">Universidad de Concepción</option>
+                                        <option disabled value="22">Universidad de La Frontera</option>
+                                        <option disabled value="23">Universidad de La Serena</option>
+                                        <option disabled value="24">Universidad de Los Andes</option>
+                                        <option disabled value="25">Universidad de Los Lagos</option>
+                                        <option disabled value="26">Universidad de Magallanes</option>
+                                        <option disabled value="27">Universidad de O'Higgins</option>
+                                        <option disabled value="28">Universidad de Playa Ancha</option>
+                                        <option disabled value="29">Universidad de Santiago de Chile</option>
+                                        <option disabled value="30">Universidad de Talca</option>
+                                        <option disabled value="31">Universidad de Tarapacá</option>
+                                        <option disabled value="32">Universidad de Valparaíso</option>
+                                        <option disabled value="33">Universidad del Bío-Bío</option>
+                                        <option disabled value="34">Universidad del Desarrollo</option>
+                                        <option disabled value="35">Universidad Diego Portales</option>
+                                        <option disabled value="36">Universidad Finis Terrae</option>
+                                        <option disabled value="37">Universidad Gabriela Mistral</option>
+                                        <option disabled value="38">Universidad Mayor</option>
+                                        <option disabled value="39">Universidad Metropolitana de Ciencias de la Educación</option>
+                                        <option disabled value="40">Universidad San Sebastián</option>
+                                        <option disabled value="41">Universidad Santo Tomás</option>
+                                        <option disabled value="42">Universidad Técnica Federico Santa María</option>
+                                        <option disabled value="43">Universidad Tecnológica Metropolitana</option>
+                                    </select>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th scope="col" class="text-center">Y COMPARA DOS CARRERAS</th>
+                                <th scope="col">
+                                    <select class="form-select" id="seleccionaUnaCarrera" disabled>
+                                        <option selected value="nada" disabled>Elige una carrera</option>
+                                    </select>
+                                </th>
+                                <th scope="col">
+                                    <select class="form-select" id="seleccionaOtraCarrera" disabled>
+                                        <option selected value="nada" disabled>Elige otra carrera</option>
+                                    </select>
+                                </th>
+                            </tr>
+                            <tbody class="table-striped">
+                                <tr>
+                                    <th scope="row"><span class="requisitos-comparador">NEM</span></th>
+                                    <td id="visualiza-nem1" class="text-center"></td>
+                                    <td id="visualiza-nem2" class="text-center"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span class="requisitos-comparador">Puntaje Ranking</span></th>
+                                    <td id="visualiza-ranking1" class="text-center"></td>
+                                    <td id="visualiza-ranking2" class="text-center"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span class="requisitos-comparador">Comprensión Lectora</span></th>
+                                    <td id="visualiza-lectora1" class="text-center"></td>
+                                    <td id="visualiza-lectora2" class="text-center"></td>
+                                </tr>
+                                  <tr>
+                                    <th scope="row"><span class="requisitos-comparador">Matemáticas</span></th>
+                                    <td id="visualiza-matematicas1" class="text-center"></td>
+                                    <td id="visualiza-matematicas2" class="text-center"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span class="requisitos-comparador">Historia y Cs. Sociales</span></th>
+                                    <td id="visualiza-historia1" class="text-center"></td>
+                                    <td id="visualiza-historia2" class="text-center"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span class="requisitos-comparador">ó</span></th>
+                                    <td id="visualiza-o1" class="text-center"></td>
+                                    <td id="visualiza-o2" class="text-center"></td>
+                                </tr>
+                                  <tr>
+                                    <th scope="row"><span class="requisitos-comparador">Ciencias</span></th>
+                                    <td id="visualiza-ciencias1" class="text-center"></td>
+                                    <td id="visualiza-ciencias2" class="text-center"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span class="requisitos-comparador">Ptje. Ponderado Mín. de Postulación</span></th>
+                                    <td id="visualiza-puntajeminimo1" class="text-center"></td>
+                                    <td id="visualiza-puntajeminimo2" class="text-center"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span class="requisitos-comparador">Ptje. Promedio (C. Lect. y Mat.) Mín. de Postulación</span></th>
+                                    <td id="visualiza-puntajepromedio1" class="text-center"></td>
+                                    <td id="visualiza-puntajepromedio2" class="text-center"></td>
+                                </tr>
+                                  <tr>
+                                    <th scope="row"><span class="requisitos-comparador">Vacantes I Semestre</span></th>
+                                    <td id="visualiza-vacantesprimer1" class="text-center"></td>
+                                    <td id="visualiza-vacantesprimer2" class="text-center"></td>
+                                </tr>
+                                <tr>
+                                    <th scope="row"><span class="requisitos-comparador">Vacantes II Semestre</span></th>
+                                    <td id="visualiza-vacantessegundo1" class="text-center"></td>
+                                    <td id="visualiza-vacantessegundo2" class="text-center"></td>
+                                </tr>
+                            </tbody>
+                    </table>
+                </form>
+            </div>
+            <div class="col-2"></div>   
+        </section>
+    
+        <section class="row">
+            <div class="col-2"></div>
+            <div class="col-7 shadow bg-white table-responsive">
+                <form>
+                    <table class="table table-borderless tabla-puntaje">                      
+                        <thead class="thead-backg">
+                            <tr>
+                                <th scope="col" class="col-3">Requisitos</th>
+                                <th scope="col" class="col-3">Puntaje obtenido</th>
+                                <th scope="col" class="col-3 text-start">Ponderación (%)</th>
+                                <th scope="col" class="col-2 text-start">Parciales</th>
+                            </tr>
+                        <tbody>
+                            <tr>
+                                <td>
+
+                                </td>
+                                <td>
+                                    <h6 class="text-muted text-center my-0">(*) Ingresa tus puntajes</h6>   
+                                </td>
+                                <td>
+                                    <h6 class="text-muted text-start my-0">(**) Deben sumar 100</h6>                                    
+                                </td>
+                                <td>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="pu_nem" class="requisitos">NEM</label>
+                                </td>
+                                <td class="row justify-content-center">
+                                    <input required class="form-control" type="text" placeholder="174-840" step="number" min="174" max="840" value="0" maxlength="3" id="pu_nem">
+                                </td>
+                                <td>
+                                    <input class="form-control" type="number" step="5" min="0" max="50" value="0" id="po_nem" size="10">
+                                </td>
+                                <td>
+                                    <output class="resultados_parciales" id="res1" for="pu_num po_nem"></output>
+                                    
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="pu_ranking" class="requisitos">Puntaje Ranking</label>
+                                </td>
+                                <td class="row justify-content-center">
+                                    <input required class="form-control" type="text" placeholder="150-850" step="number" min="150" max="850" value="0" maxlength="3" id="pu_ranking">
+                                </td>
+                                <td>
+                                    <input class="form-control" type="number" step="5" min="0" max="50" value="0" id="po_ranking" size="15">
+                                </td>
+                                <td>
+                                    <output class="resultados_parciales" id="res2">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="pu_lectora" class="requisitos">Comprensión Lectora</label>
+                                </td>
+                                <td class="row justify-content-center">
+                                    <input required class="form-control" type="text" placeholder="150-850" step="number" min="150" max="850" value="0" maxlength="3" id="pu_lectora">
+                                </td>
+                                <td>
+                                    <input class="form-control" type="number" step="5" min="0" max="50" value="0" id="po_lectora" size="15">
+                                </td>
+                                <td>
+                                    <output class="resultados_parciales" id="res3">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="pu_matematicas" class="requisitos">Matemáticas</label>
+                                </td>
+                                <td class="row justify-content-center">
+                                    <input required class="form-control" type="text" placeholder="150-850" step="number" min="150" max="850" value="0" maxlength="3" id="pu_matematicas">
+                                </td>
+                                <td>
+                                    <input class="form-control" type="number" step="5" min="0" max="60" value="0" id="po_matematicas" size="15">
+                                </td>
+                                <td>
+                                    <output class="resultados_parciales" id="res4">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="div-check">
+                                        <input class="form-check-input" type="radio" name="pruebaOptativa" value="2" id="habilitarHistoria">
+                                        <label for="pu_historia" class="requisitos optativa">Historia y Cs. Sociales</label>
+                                    </div>
+                                </td>
+                                <td class="row justify-content-center"><input required class="form-control" type="text" placeholder="150-850" step="number" min="150" max="850" value="0" maxlength="3" id="pu_historia">
+                                </td>
+                                <td><input class="form-control" type="number" step="5" min="0" max="50" value="0" id="po_historia" size="15">
+                                </td>
+                                <td><output class="resultados_parciales" id="res6">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <div class="div-check">
+                                        <input class="form-check-input" type="radio" name="pruebaOptativa" value="1" id="habilitarCiencias"> 
+                                        <label for="pu_ciencias" class="requisitos optativa">Ciencias</label>
+                                    </div>
+                                </td>
+                                <td class="row justify-content-center">
+                                    <input required class="form-control" ype="text" placeholder="150-850" step="number" min="150" max="850" value="0" maxlength="3" id="pu_ciencias">
+                                </td>
+                                <td>
+                                    <input class="form-control" type="number" step="5" min="0" max="50" value="0" id="po_ciencias" size="15">
+                                </td>
+                                <td>
+                                    <output class="resultados_parciales" id="res5">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                </td>
+                                <td class="text-center">
+                                    <input type="button" value="Calcular" class="btn mx-auto" id="boton-calcular">
+                                </td>
+                                <td class="align-middle">
+                                    <span id="puntaje-ponderado">PUNTAJE PONDERADO:</span> 
+                                </td>
+                                <td>
+                                    <output id="resultNumber"></output>
+                                </td>    
+                            </tr>
+                        </tbody>
+                    </table>
+                </form>
+            </div>
+            <div class="col-1 texto-vertical2">
+                PONDERADOR
+            </div>
+            <div class="col-2">
+                
+            </div>
+        </section>
+    </article>
+
+
+<!--Pequeño footer-->  
+    <footer class="container-fluid page-footer text-white mt-5">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-10" id="div-accordion">
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header" id="headingOne">
+                          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <strong>¿Para qué sirve el comparador de carreras?</strong>
+                          </button>
+                        </h3>
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne">
+                          <div class="accordion-body">
+                            Sencillo. Hemos puesto a disposición de los futuros estudiantes esta herramienta que permite cotejar los requisitos y ponderaciones de cada una de las carreras ofertadas por las 43 universidades chilenas adscritas al sistema de acceso centralizado de admisión 2022.
+                            Selecciona una o dos carreras a partir de las listas desplegables: 1)&nbsp;"Elige una/otra institución" y 2)&nbsp;"Elige una/otra carrera", respectivamente.
+                            Entre las filas&nbsp;[1-9] se mostrarán los requisitos de postulación a cada carrera universitaria, siendo obligatorio haber rendido las pruebas de Comprensión Lectora, Matemáticas y al menos una de las siguientes pruebas electivas: 1)&nbsp;Historia y Cs. Sociales o 2)&nbsp;Ciencias.
+                            Finalmente, las dos últimas filas&nbsp;[10-11] señalan el número de vacantes disponibles para el primer y segundo semestre.
+                          </div>
+                        </div>
+                      </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <strong>¿Cómo calculo mi puntaje ponderado?</strong> 
+                        </button>
+                      </h2>
+                      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                        <div class="accordion-body">
+                            Simplemente ingresa los puntajes indicados y su respectiva ponderación con respecto a la carrera que quieres postular.
+                            La suma de estos resultados parciales corresponde a tu puntaje ponderado.
+                            Recuerda que el puntaje ponderado solo se calcula considerando la prueba de Historia y Cs. Sociales o su símil de Ciencias, pero nunca los dos juntos.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <strong>¿Qué significa NEM?</strong>  
+                        </button>
+                      </h2>
+                      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" >
+                        <div class="accordion-body">
+                            El NEM es la sigla de Notas de Enseñanza Media y corresponde al promedio de las calificaciones finales de los cuatro años de Enseñanza Media.
+                            Se calcula sumando los promedios de primero a cuarto medio y dividiéndolos por 4, utilizando una escala de 1,00 a 7,00.
+                            Posteriormente, se debe transformar a un puntaje estándar mediante tablas de conversión según la modalidad de estudio (Humanista-Científico diurno, Humanista-Científico de adultos y Técnico-Profesional).
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            <strong>¿Qué es el Puntaje Ranking?</strong>  
+                        </button>
+                      </h2>
+                      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour">
+                        <div class="accordion-body">
+                            El Puntaje Ranking es un factor de selección que considera el rendimiento académico de un estudiante en relación con su contexto educativo, que se refiere al entorno donde se desarrolla la experiencia educativa de él o la estudiante.
+                            De esta forma, expresa la posición relativa del estudiante en cada contexto educativo en el cual estuvo durante su Enseñanza Media, tomando como referencia el desempeño de los estudiantes en las últimas tres generaciones de dicho contexto.
+                            Es un puntaje que busca beneficiar a quienes tienen un comportamiento académico destacado en su contexto y es, a lo menos, igual al Puntaje NEM.
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+            </div>
+            <div class="col-1"></div>
+        </div>
+        <div class="row">
+
+          <div class="col-12 text-center">
+              
+            <p>Copyright © 2021. Desarrollado por erices.dev</p>
+          </div>
+        </div>
+    </footer>
+
+</body>
+</html>
